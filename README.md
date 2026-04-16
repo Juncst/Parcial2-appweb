@@ -31,8 +31,6 @@ Parcial2-appweb/
 ├── backend/
 └── database/
     └── parcial2_appweb.sql
-
-
 ``` 
 ## Funcionalidades implementadas
 
