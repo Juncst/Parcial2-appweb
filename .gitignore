@@ -33,8 +33,5 @@ Thumbs.db
 .angular/
 coverage/
 
-# Node
-package-lock.json
-
 # Otros
 *.bak
