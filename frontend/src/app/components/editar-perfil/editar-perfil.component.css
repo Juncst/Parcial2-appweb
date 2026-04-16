@@ -1,0 +1,101 @@
+.editar-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at top, #0f2747 0%, #081224 45%, #050b16 100%);
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.editar-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(96, 165, 250, 0.12);
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  color: #e5e7eb;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.editar-card h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.editar-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background-color: rgba(15, 23, 42, 0.75);
+  color: #e5e7eb;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.editar-card input::placeholder {
+  color: #94a3b8;
+}
+
+.editar-card input:focus {
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.botones {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Guardar */
+button.guardar {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+}
+
+button.guardar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+}
+
+/* Cancelar */
+button.cancelar {
+  background: linear-gradient(135deg, #64748b, #475569);
+  color: #ffffff;
+}
+
+button.cancelar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(71, 85, 105, 0.28);
+}
+
+.error {
+  margin: 0;
+  text-align: center;
+  color: #f87171;
+  font-size: 14px;
+}

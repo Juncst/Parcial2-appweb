@@ -1,0 +1,38 @@
+<div class="editar-container">
+  <div class="editar-card">
+    <h2>Editar perfil</h2>
+
+    <input
+      type="text"
+      placeholder="Nombre"
+      [(ngModel)]="nombre"
+    />
+
+    <input
+      type="text"
+      placeholder="Apellido"
+      [(ngModel)]="apellido"
+    />
+
+    <input
+      type="number"
+      placeholder="Edad"
+      [(ngModel)]="edad"
+    />
+
+    <input
+      type="text"
+      placeholder="Telefono"
+      [(ngModel)]="telefono"
+    />
+
+    <p class="error" *ngIf="mensajeError">
+      {{ mensajeError }}
+    </p>
+
+    <div class="botones">
+      <button class="guardar" (click)="guardarCambios()">Guardar</button>
+      <button class="cancelar" (click)="cancelar()">Cancelar</button>
+    </div>
+  </div>
+</div>

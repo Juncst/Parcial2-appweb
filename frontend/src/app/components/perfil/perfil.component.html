@@ -1,0 +1,17 @@
+<div class="perfil-container" *ngIf="perfil">
+  <div class="perfil-card">
+    <h2>Perfil</h2>
+
+    <p><strong>Usuario:</strong> {{ perfil.usuario }}</p>
+    <p><strong>Correo:</strong> {{ perfil.correo }}</p>
+    <p><strong>Nombre:</strong> {{ perfil.nombre }}</p>
+    <p><strong>Apellido:</strong> {{ perfil.apellido }}</p>
+    <p><strong>Edad:</strong> {{ perfil.edad }}</p>
+    <p><strong>Telefono:</strong> {{ perfil.telefono }}</p>
+
+    <div class="botones">
+      <button (click)="editar()">Editar informacion</button>
+      <button class="cerrar" (click)="cerrarSesion()">Cerrar sesion</button>
+    </div>
+  </div>
+</div>
